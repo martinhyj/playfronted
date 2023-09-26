@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2048网页版</title>
+		<link rel="stylesheet" type="text/css" href="css/game.css"/>
+	</head>
+	<body>
+		<div id="game" class="game">
+			<div class="game_score">
+				分数：<span id="game_score" class="game_score">0</span>
+			</div>
+			
+			<div id="game_container" class="game-container" style="width: 500px; height: 500px;">
+				<div id="game_over" class="game_hide game_over">
+					<div class="game_over_info">
+						<div id="game_over_info" ></div>
+						<span id="game_restart">重新开始</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.7.1.js"></script>
+		<script src="js/Game2048.js"></script>
+		<script>
+			Game2048({prefix:'game', len:4, size:100, margin:20});
+		</script>
+	</body>
+</html> 
