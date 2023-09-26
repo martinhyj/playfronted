@@ -12,7 +12,7 @@
 		var board=new Board(len);
 		
 		var score=0;
-		var winNum=32;
+		var winNum=2048;
 		var isGameOver=false;
 		
 		//开始游戏
